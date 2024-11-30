@@ -1,5 +1,5 @@
 // Homepage Image
-const homepagePics = ["1", "2", "4", "5", "6"];
+const homepagePics = ["1", "2", "3", "4", "5"];
 const homepageBackground = document.querySelector(".home__background");
 const leftButton = document.querySelector(".home__button--left");
 const rightButton = document.querySelector(".home__button--right");
@@ -7,7 +7,7 @@ const rightButton = document.querySelector(".home__button--right");
 let currentIndex = 0;
 
 function updateBackground() {
-  homepageBackground.style.backgroundImage = `url("../images/Homepage/pic ${homepagePics[currentIndex]}.jpeg")`;
+  homepageBackground.style.backgroundImage = `url("../images/Homepage/small pic ${homepagePics[currentIndex]}.jpg")`;
 }
 
 function showPreviousImage() {
