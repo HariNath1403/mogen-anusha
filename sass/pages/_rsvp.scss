@@ -64,8 +64,14 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        gap: $space-mini;
-        font-size: $text-mini;
+        gap: $space-supersmall;
+        font-size: calc(#{$text-mini + $text-supersmall}/ 2);
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: $space-supersmall;
+        }
 
         label {
           color: $color-black;

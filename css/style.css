@@ -449,8 +449,12 @@ body {
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
-      gap: 1.2rem;
-      font-size: 1.6rem; }
+      gap: 0.6rem;
+      font-size: calc(2.8rem/ 2); }
+      .rsvp__form--question--radio div {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem; }
       .rsvp__form--question--radio label {
         color: #000000;
         color: #ffffff; }
