@@ -51,9 +51,13 @@
   }
 
   &__gallery {
-    margin-top: $space-decent;
+    margin-top: calc(#{$space-margin + $space-decent}/ 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &--link {
+      text-align: center;
       display: inline-block;
       font-size: $text-mini;
       text-decoration: none;

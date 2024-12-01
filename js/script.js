@@ -150,31 +150,6 @@ const initGalleryLinks = function () {
 
 initGalleryLinks();
 
-// Background music
-window.onload = function () {
-  const audio = new Audio("../images/background-music.mp3");
-  audio.loop = true;
-  audio.muted = true;
-
-  let hasPlayed = false;
-
-  window.addEventListener("scroll", () => {
-    if (!hasPlayed) {
-      audio
-        .play()
-        .then(() => {
-          audio.muted = false;
-          audio.volume = 0.55;
-          audio.currentTime = 10;
-          hasPlayed = true;
-        })
-        .catch((error) => {
-          console.error("Error starting audio:", error);
-        });
-    }
-  });
-};
-
 // Form to Google Sheets
 
 const formSubmitBtn = document.querySelector(".rsvp__form--submit");
@@ -272,4 +247,37 @@ function handleInputFocus() {
 // Attach event listener to each input field
 inputFields.forEach((input) => {
   input.addEventListener("focus", handleInputFocus);
+});
+
+// Background music
+const musicIcon = document.querySelector(".music__btn--icon");
+
+const musicBtn = document.querySelector(".music__btn");
+
+let playMusic = false;
+
+const audio = new Audio("../images/background-music.mp3");
+audio.loop = true;
+audio.volume = 0.5;
+audio.currentTime = 10;
+
+const turnMusicOn = function () {
+  audio.muted = false;
+  audio.play();
+};
+
+const turnMusicOff = function () {
+  audio.pause();
+};
+
+musicBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  playMusic = !playMusic;
+
+  if (playMusic) {
+    turnMusicOn();
+  } else {
+    turnMusicOff();
+  }
 });

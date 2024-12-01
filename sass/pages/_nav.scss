@@ -69,20 +69,30 @@
     color: $color-main;
     background-color: transparent;
     position: absolute;
-    top: 2.5%;
+    top: 1.5%;
     right: 7.5%;
-    transform: scale(1);
+    transform: scale(1.5);
     transition: all 0.3s;
   }
 
   &__content {
-    margin: $space-margin $space-small;
+    margin: $space-standard $space-small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__logo {
+    width: calc(#{$space-big}* 1.25);
+    height: auto;
+    margin-bottom: $space-small;
   }
 
   &__header {
     color: $color-main;
     font-size: $text-emphasize;
     padding: 0 $space-small;
+    text-align: center;
   }
 
   &__list {

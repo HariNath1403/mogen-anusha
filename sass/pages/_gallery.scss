@@ -39,7 +39,7 @@
     gap: calc(#{$space-mini + $space-supersmall}/ 2);
     margin-bottom: calc(#{$space-mini + $space-supersmall}/ 2);
     width: 100vw;
-    height: 120vh;
+    height: 125vh;
     grid-template-columns: repeat(2, 1fr);
 
     &--pic {

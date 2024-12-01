@@ -39,3 +39,40 @@
     transform: rotate(360deg);
   }
 }
+
+.workspace {
+  position: relative;
+}
+.music {
+  position: fixed;
+  bottom: $space-small;
+  right: $space-small;
+  z-index: 5;
+
+  &__btn {
+    padding: $space-small;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba($color-shade, 0.45);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+
+    &:hover,
+    &:active {
+      background-color: rgba($color-shade, 0.95);
+    }
+
+    &--icon {
+      font-size: calc(#{$text-big + $text-emphasize}/ 2);
+      font-size: $text-emphasize;
+      color: $color-main;
+      color: $color-white;
+    }
+  }
+}
+
+// .music__btn:hover .music__btn--icon {
+//   color: $color-white;
+// }
+// .music__btn:active .music__btn--icon {
+//   color: $color-white;
+// }
