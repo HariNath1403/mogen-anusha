@@ -6,6 +6,14 @@ const rightButton = document.querySelector(".home__button--right");
 
 let currentIndex = 0;
 
+// Preload images
+const preloadedImages = [];
+homepagePics.forEach((pic) => {
+  const img = new Image();
+  img.src = `../images/Homepage/small pic ${pic}.jpg`;
+  preloadedImages.push(img);
+});
+
 function updateBackground() {
   homepageBackground.style.backgroundImage = `url("../images/Homepage/small pic ${homepagePics[currentIndex]}.jpg")`;
 }
@@ -16,7 +24,7 @@ function showPreviousImage() {
 }
 
 function showNextImage() {
-  currentIndex = (currentIndex + 1) % homepagePics.length; //
+  currentIndex = (currentIndex + 1) % homepagePics.length;
   updateBackground();
 }
 
