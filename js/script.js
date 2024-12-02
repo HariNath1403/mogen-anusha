@@ -267,7 +267,7 @@ let playMusic = false;
 const audio = new Audio("../images/background-music.mp3");
 audio.loop = true;
 audio.volume = 0.5;
-audio.currentTime = 10;
+audio.currentTime = 15;
 
 const turnMusicOn = function () {
   audio.muted = false;

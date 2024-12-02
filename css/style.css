@@ -211,6 +211,7 @@ body {
     text-align: center; }
     .home__background--txt--header {
       text-transform: capitalize;
+      color: #2f4ca3;
       font-size: 3.6rem;
       font-weight: 700;
       margin-bottom: 0.6rem; }

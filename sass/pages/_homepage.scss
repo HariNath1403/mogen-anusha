@@ -20,6 +20,16 @@
 
       &--header {
         text-transform: capitalize;
+        // background-image: linear-gradient(
+        //   to top right,
+        //   $color-black,
+        //   $color-alt-1,
+        //   $color-black
+        // );
+        color: $color-main;
+        // color: transparent;
+        // background-clip: text;
+        // -webkit-background-clip: text;
         font-size: $text-emphasize;
         font-weight: 700;
         margin-bottom: $space-supersmall;
