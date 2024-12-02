@@ -109,6 +109,7 @@ body {
         font-weight: 400; }
         .assistance__inquiries--sides--per a:link, .assistance__inquiries--sides--per a:visited {
           color: #dc143c;
+          color: #000000;
           text-decoration: none;
           display: block; }
         .assistance__inquiries--sides--per a:hover {
