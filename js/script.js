@@ -199,7 +199,7 @@ function validateForm() {
   const email = document.getElementById("form-email").value;
   const pax = document.getElementById("form-pax").value;
   const affiliation = document.querySelector(
-    'input[name="Affliation"]:checked'
+    'input[name="Affiliation"]:checked'
   );
 
   // Validate Full Name
@@ -267,7 +267,7 @@ let playMusic = false;
 const audio = new Audio("../images/background-music.mp3");
 audio.loop = true;
 audio.volume = 0.5;
-audio.currentTime = 15;
+audio.currentTime = 11;
 
 const turnMusicOn = function () {
   audio.muted = false;
